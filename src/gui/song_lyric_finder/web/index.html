@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Import Required Resources -->
+    <meta charset="UTF-8">
+    <title>Lyric Finder</title>
+    <link rel="" href="">
+    <script src="https://arjax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript">
+        function find()
+        {
+            var artist = document.getElementById('artist').value;
+            var song = document.getElementById('song').value;
+
+            eel.test(artist,song);
+        }
+    </script>
+    <!-- Window styling -->
+    <style>
+        body{
+        margin:0px;
+        overflow:hidden;
+        }
+        ::-webkit-scrollbar{
+            width:10px;
+            }
+        #topimg{
+            height:100%;
+            width:100%;
+        }
+        #box1{
+            height:400px;
+            width:300px;
+            position:absolute;
+            top:75%;
+            left:49%;
+            transform:translate(-50%,-50%);
+            z-index:9999;
+        }
+        #box2{
+            height:400px;
+            width:400px;
+            padding:10px;
+            overflow:hidden;
+            position:absolute;
+            top:40%;
+            left:75%;
+            transform:translate(-50%,-50%);
+            display:none;
+            z-index:9999;
+        }
+        label{
+            font-family:arial;
+            font-size:13px;
+            color: rgb(80, 80, 80);
+            margin-left:5px;
+        }
+        #artist,#song{
+            height:30px;
+            width:225px;
+            background-color:transparent;
+            margin-bottom:40px;
+            border-radius:10px;
+            color:rgb(55, 55, 55);
+            outline:none;
+            padding-left:5px;
+        }
+        #artist:hover,#song:hover{
+            height:30px;
+            width:225px;
+            background-color:transparent;
+            margin-bottom:40px;
+            border-radius:10px;
+            color:rgb(110, 110, 110);
+            outline:none;
+            padding-left:5px;
+        }
+        #search{
+            height:35px;
+            width:160px;
+            background-color:#e48f6e;
+            font-family:arial;
+            font-size:12px;
+            color:#fafafa;
+            border:none;
+            outline:none;
+            border-radius:10px;
+        }
+        #search:hover{
+            height:35px;
+            width:160px;
+            border-radius:10px;
+            background-color:#f39975;
+            font-family:arial;
+            font-size:12px;
+            color:#fafafa;
+            border:none;
+            outline:none;
+            border-radius:10px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="box1">
+        <label>Artist</label>
+        <input type="text" id="artist"/>
+
+        <label>Song</label>
+        <input type="text" id="song"/>
+
+        <input type="button" onclick="find()" id="search" value="Search"/>
+    </div>
+
+    <img src="bg.png" id="topimg"/>
+</body>
+</html>
