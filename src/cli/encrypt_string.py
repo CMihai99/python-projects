@@ -1,5 +1,5 @@
 # Developed by: Calinescu Mihai <mihaimihaia431@gmail.com>
-# Date: August 3rd, 2021
+# Date: August 4th, 2021
 
 from cryptography.fernet import Fernet
 
