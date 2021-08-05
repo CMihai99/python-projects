@@ -1,16 +1,11 @@
-'''
-Developed by: Calinescu Mihai
-Date: 16 Mar, 2021
+# Developed by: Calinescu Mihai <mihaimihaia431@gmail.com>
+# Date: August 4th, 2021
 
-Github: https://github.com/CMihai99
-'''
+base = float((input("Enter number: ")))
+exponent = float((input("To the power of: ")))
 
+result = pow(base, exponent)
 
-base = float((input("Base number: ")))
-exponent = float((input("Exponent: ")))
-
-ans = pow(base, exponent) # Declare variable
-
-formatted_ans = "{:.4f}".format(ans) # Format answer
-
-print("Exponential Value:", formatted_ans)
+# Format result
+formatted_result = "{:.0f}".format(result)
+print("Result:", formatted_result)
