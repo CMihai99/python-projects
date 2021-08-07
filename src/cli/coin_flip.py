@@ -1,5 +1,5 @@
 # Developed by: Calinescu Mihai <mihaimihaia431@gmail.com>
-# Date: August 4th, 2021
+# Date: August 7th, 2021
 
 import random, time
 
@@ -14,7 +14,7 @@ while flip_again == "yes" or flip_again == "Yes" or flip_again == "y" or flip_ag
 
     time.sleep(2)
 
-    print("Flipped the coin. Result is", [heads_choice, tails_choice][random.randint(0,1)])
+    print("Flipped the coin. Result is", [heads_choice, tails_choice][random.randint(0, 1)])
 
     # FLip the coin again
     flip_again = input("Flip again (y/n)? ")
