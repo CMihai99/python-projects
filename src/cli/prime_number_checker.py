@@ -1,20 +1,16 @@
-'''
-Developed by: Calinescu Mihai
-Date: 8 Apr, 2021
+# Developed by: Calinescu Mihai <mihaimihaia431@gmail.com>
+# Date: August 7th, 2021
 
-Github: https://github.com/CMihai99
-'''
+number = int(input("Enter number: "))
 
-
-numbers = int(input("Enter a number: "))
-
-if numbers<=1:
-    print(numbers, "is not prime")
+if number <= 1:
+    print("Prime check: False.", number, "is not prime")
 
 else:
-    for i in range(2, numbers):
-        if (numbers%i)==0:
-            print(numbers, "is not prime")
+    for i in range(2, number):
+        if (number % i) == 0:
+            print("Prime check: False.", number, "is not prime")
             break
+
     else:
-        print(numbers, "is prime")
+        print("Prime check: True.", number, "is prime")
