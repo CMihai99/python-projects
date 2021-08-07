@@ -5,11 +5,9 @@ num = int(input("Enter number: "))
 
 factorial = 1
 
-# Check if the number is negative
 if num < 0:
    print("Factorial only works for positive integers")
 
-# Check if the number is 0
 elif num == 0:
    print("Factorial of 0 is 1")
 
