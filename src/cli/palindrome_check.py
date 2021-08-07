@@ -8,8 +8,10 @@ def palindromeCheck(word):
 
 answer = palindromeCheck(word)
 
+capitalized_word = word.capitalize()
+
 if answer:
-    print("Word is a palindrome")
+    print("Palindrome check: True.", capitalized_word, "is a palindrome")
 
 else:
-    print("Word isn't a palindrome")
+    print("Palindrome check: False.", capitalized_word, "isn't a palindrome")
