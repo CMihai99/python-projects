@@ -1,5 +1,5 @@
 # Developed by: Calinescu Mihai <mihaimihaia431@gmail.com>
-# Date: August 5th, 2021
+# Date: August 7th, 2021
 
 num = int(input("Enter number: "))
 
@@ -17,4 +17,4 @@ else:
    for i in range(1, num + 1):
       factorial = factorial * i
 
-   print("Factorial of", num, "is", factorial)
+   print(f"Factorial of {num} is {factorial}")

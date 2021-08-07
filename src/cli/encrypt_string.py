@@ -1,5 +1,5 @@
 # Developed by: Calinescu Mihai <mihaimihaia431@gmail.com>
-# Date: August 4th, 2021
+# Date: August 7th, 2021
 
 from cryptography.fernet import Fernet
 
@@ -13,4 +13,5 @@ key_class = Fernet(key)
 
 # Encrypt string
 encrypt_message = key_class.encrypt(string.encode())
-print("Encrypted string:", encrypt_message)
+
+print(f"Encrypted string: {encrypt_message}")

@@ -5,4 +5,4 @@ words = input("Enter words: ")
 
 reversed_words = words[::-1]
 
-print("Reversed words:", reversed_words)
+print(f"Reversed words: {reversed_words}")

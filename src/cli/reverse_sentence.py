@@ -8,4 +8,4 @@ def reverse(sentence):
     reverse_sentence = ' '.join(reversed(words)) # Reverse split string and join using space  
     return reverse_sentence # Return joined string
 
-print("Reversed sentence:", reverse(sentence))
+print(f"Reversed sentence: {reverse(sentence)}")

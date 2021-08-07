@@ -4,13 +4,13 @@
 number = int(input("Enter number: "))
 
 if number <= 1:
-    print("Prime check: False.", number, "is not prime")
+    print(f"Prime check: False. {number} is not a prime number")
 
 else:
     for i in range(2, number):
         if (number % i) == 0:
-            print("Prime check: False.", number, "is not prime")
+            print(f"Prime check: False. {number} is not a prime number")
             break
 
     else:
-        print("Prime check: True.", number, "is prime")
+        print(f"Prime check: True. {number} is a prime number")
