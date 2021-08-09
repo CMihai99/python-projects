@@ -12,21 +12,21 @@ def translate():
         i = sentence[k]
 
         if i[0] in ['a', 'e', 'i', 'o', 'u']:
-            sentence[k] = i+'ay'
+            sentence[k] = i + 'ay'
 
         elif t(i) in characters:
-            sentence[k] = i[2:]+i[:2]+'ay'
+            sentence[k] = i[2:] + i[:2] + 'ay'
 
         elif i.isalpha() == False:
             sentence[k] = i
 
         else:
-            sentence[k] = i[1:]+i[0]+'ay'
+            sentence[k] = i[1:] + i[0] + 'ay'
 
     return ' '.join(sentence)
 
 def t(str):
-    return str[0]+str[1]
+    return str[0] + str[1]
 
 if __name__ == "__main__":
     x = translate()
