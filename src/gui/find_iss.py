@@ -1,24 +1,23 @@
-'''
-Developed by: Calinescu Mihai
-Date: 8 Apr, 2021
-
-Github: https://github.com/CMihai99
-'''
-
+# Developed by: Calinescu Mihai <mihaimihaia431@gmail.com>
+# Date: August 13th, 2021
 
 import pandas as pd
 import plotly.express as px
 
-# Store variables
 url = 'http://api.open-notify.org/iss-now.json'
-df = pd.read_json(url)
 
-# Change order of data frame
-df['latitude'] = df.loc['latitude', 'iss_position']
-df['longitude'] = df.loc['longitude', 'iss_position']
-df.reset_index(inplace=True)
+data_frame = pd.read_json(url)
 
-df = df.drop(['index', 'message'], axis=1) # Remove index
+data_frame['latitude'] = data_frame.loc['latitude', 'iss_position']
 
-fig = px.scatter_geo(df, lat='latitude', lon='longitude') # Plot information
-fig.show() # Open map in browser
+data_frame['longitude'] = data_frame.loc['longitude', 'iss_position']
+
+data_frame.reset_index(inplace = True)
+
+# Remove index
+data_frame = data_frame.drop(['index', 'message'], axis = 1)
+
+# Plot information
+fig = px.scatter_geo(data_frame, lat = 'latitude', lon = 'longitude')
+
+fig.show()
