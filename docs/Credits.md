@@ -25,6 +25,6 @@ Do not add any entries after Mihai Calinescu. He will be at the end of this file
 ## Credits list
 
 M: Mihai Calinescu <mihaimihaia431@gmail.com>  
-D: Did everything else  
+D: Did everything  
 S: Dragomiresti-Vale  
 S: Ilfov, Romania
