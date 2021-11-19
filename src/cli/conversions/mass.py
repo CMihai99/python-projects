@@ -1,19 +1,11 @@
-'''
-Developed by: Calinescu Mihai
-Date: 16 Mar, 2021
+# Developed by: Calinescu Mihai <mihaimihaia431@gmail.com>
+# Date: November 19th, 2021
 
-Github: https://github.com/CMihai99
-'''
+# Converts: mg, g, kg, tonne, oz, lbs
 
-# CONVERTS: mg, g, kg, tonne, oz, lbs
-
-
-# Input
 num1 = input('Enter the value: ')
 unit1 = input('Convert from (mg, g, kg, tonne, oz, lbs):  ')
 unit2 = input('To (mg, g, kg, tonne, oz, lbs): ')
-
-# Calculations
 
 # mg
 if unit1 == "mg" and unit2 == "mg":

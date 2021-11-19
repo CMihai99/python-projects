@@ -1,19 +1,11 @@
-'''
-Developed by: Calinescu Mihai
-Date: 15 Mar, 2021
+# Developed by: Calinescu Mihai <mihaimihaia431@gmail.com>
+# Date: November 19th, 2021
 
-Github: https://github.com/CMihai99
-'''
+# Converts: mm, cm, m, km, ft, in
 
-# CONVERTS: mm, cm, m, km, ft, in
-
-
-# Input
 num1 = input('Enter the value: ')
 unit1 = input('Convert from (mm, cm, m, km, ft, in):  ')
 unit2 = input('To (m, cm, mm, km, ft, in): ')
-
-# Calculations
 
 # mm
 if unit1 == "mm" and unit2 == "mm":

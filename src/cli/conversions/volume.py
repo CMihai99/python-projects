@@ -1,19 +1,11 @@
-'''
-Developed by: Calinescu Mihai
-Date: 15 Mar, 2021
+# Developed by: Calinescu Mihai <mihaimihaia431@gmail.com>
+# Date: November 19th, 2021
 
-Github: https://github.com/CMihai99
-'''
+# Converts: ml, l, oz, cubic ft, cubic in, cubic cm, cubic m
 
-# CONVERTS: ml, l, oz, cubic ft, cubic in, cubic cm, cubic m
-
-
-# Input
 num1 = input('Enter the value: ')
 unit1 = input('Convert from (ml, l, oz, cubic ft, cubic in, cubic cm, cubic m):  ')
 unit2 = input('To (ml, l, oz, cubic ft, cubic in, cubic cm, cubic m): ')
-
-# Calculations
 
 # ml
 if unit1 == "ml" and unit2 == "l":

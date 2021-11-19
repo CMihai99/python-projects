@@ -1,19 +1,11 @@
-'''
-Developed by: Calinescu Mihai
-Date: 16 Mar, 2021
+# Developed by: Calinescu Mihai <mihaimihaia431@gmail.com>
+# Date: November 19th, 2021
 
-Github: https://github.com/CMihai99
-'''
+# Converts: celsius, fahrenheit, kelvin
 
-# CONVERTS: celsius, fahrenheit, kelvin
-
-
-# Input
 num1 = input('Enter the value: ')
 unit1 = input('Convert from (celsius, fahrenheit, kelvin): ')
 unit2 = input('To (celsius, fahrenheit, kelvin): ')
-
-# Calculations
 
 # Celsius
 if unit1 == "celsius" and unit2 == "celsius":

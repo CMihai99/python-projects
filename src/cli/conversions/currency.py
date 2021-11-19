@@ -1,19 +1,11 @@
-'''
-Developed by: Calinescu Mihai
-Date: 16 Mar, 2021
+# Developed by: Calinescu Mihai <mihaimihaia431@gmail.com>
+# Date: November 19th, 2021
 
-Github: https://github.com/CMihai99
-'''
+# Converts: usd, ron, eur, gbp
 
-# CONVERTS: usd, ron, eur, gbp
-
-
-# Input
 num1 = input('Enter the value: ')
 unit1 = input('Convert from (usd, ron, eur, gbp): ')
 unit2 = input('To (usd, ron, eur, gbp): ')
-
-# Calculations
 
 # USD
 if unit1 == "usd" and unit2 == "usd":
