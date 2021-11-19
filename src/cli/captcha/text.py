@@ -1,17 +1,10 @@
-'''
-Developed by: Calinescu Mihai
-Date: 8 Apr, 2021
-
-Github: https://github.com/CMihai99
-'''
-
+# Developed by: Calinescu Mihai <mihaimihaia431@gmail.com>
+# Date: November 19th, 2021
 
 from captcha.image import ImageCaptcha
 
-image = ImageCaptcha(width=300, height=100) # Image Captcha
+user_input = input("Enter text to store as captcha: ")
+data = image.generate(user_input)
 
-user_input = input("Enter text to store as captcha: ") # Input
-
-data = image.generate(user_input) # Generates text
-
-image.write(user_input, 'texts/{}.png'.format(user_input)) # Writes file with dynamic filename
+image = ImageCaptcha(width=300, height=100)
+image.write(user_input, 'texts/{}.png'.format(user_input))
