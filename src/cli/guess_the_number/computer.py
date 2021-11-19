@@ -1,14 +1,8 @@
-'''
-Developed by: Calinescu Mihai
-Date: 14 Mar, 2021
-
-Github: https://github.com/CMihai99
-'''
-
+# Developed by: Calinescu Mihai <mihaimihaia431@gmail.com>
+# Date: November 19th, 2021
 
 import random
 
-# Guess The Number
 def guess_number(x):
     random_number = random.randint(1, x)
     guess_number = 0
@@ -22,5 +16,5 @@ def guess_number(x):
 
     print(f'Congratulations! You have guessed the number {random_number} correctly!')
 
-# Set maximum range
+# Max range
 guess_number(int(input("Enter range: ")))
