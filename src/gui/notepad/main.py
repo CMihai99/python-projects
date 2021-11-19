@@ -18,7 +18,6 @@ import syntax
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowIcon(QIcon('icon.png'))
         self.screen_width, self.screen_height = self.geometry().width(), self.geometry().height()
         self.resize(self.screen_width * 2, self.screen_height * 2)
         self.filterTypes = 'Text Document (*.txt);; Python File (*.py);; Markdown File (*.md)'

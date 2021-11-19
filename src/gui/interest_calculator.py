@@ -34,7 +34,7 @@ class App(QDialog):
 
 		self.rateSpinBox = QDoubleSpinBox()
 		self.rateSpinBox.setRange(0, 100) # 0% to 100%
-		self.rateSpinBox.setValue(10) # 10% default value
+		self.rateSpinBox.setValue(10)     # 10% default value
 		self.rateSpinBox.setSuffix('%')
 		self.rateSpinBox.valueChanged.connect(self.calculate_interest)
 

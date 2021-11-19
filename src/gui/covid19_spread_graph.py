@@ -5,22 +5,22 @@ import numpy as np
 
 
 # Assign status
-gray = (0.88, 0.88, 0.88)  # Uninfected
-red = (0.99, 0.03, 0.03)   # Infected
-green = (0, 0.99, 0.03)    # Recovered
-black = (0, 0, 0)          # Dead
+gray = (0.88, 0.88, 0.88) # Uninfected
+red = (0.99, 0.03, 0.03)  # Infected
+green = (0, 0.99, 0.03)   # Recovered
+black = (0, 0, 0)         # Dead
 
 
 # Virus information
 covid19_params = {
     "r0": 2.28,
-    "incubation": 5,              # Percent
-    "percent_mild": 0.8,          # Percent
-    "mild_recovery": (7, 14),     # Days
-    "percent_severe": 0.2,        # Percent
-    "severe_recovery": (21, 42),  # Days
-    "severe_death": (14, 56),     # Days
-    "fatality_rate": 0.034,       # Percent
+    "incubation": 5,             # Percent
+    "percent_mild": 0.8,         # Percent
+    "mild_recovery": (7, 14),    # Days
+    "percent_severe": 0.2,       # Percent
+    "severe_recovery": (21, 42), # Days
+    "severe_death": (14, 56),    # Days
+    "fatality_rate": 0.034,      # Percent
     "serial_interval": 7
 }
 
@@ -229,10 +229,10 @@ class Virus():
 
     # Update text on screen
     def update_text(self):
-        self.day_text.set_text("Day {}".format(self.day))
-        self.infected_text.set_text("Infected: {}".format(self.num_currently_infected))
-        self.deaths_text.set_text("\nDeaths: {}".format(self.num_deaths))
-        self.recovered_text.set_text("\n\nRecovered: {}".format(self.num_recovered))
+        self.day_text.set_text("Ziua {}".format(self.day))
+        self.infected_text.set_text("Infectari: {}".format(self.num_currently_infected))
+        self.deaths_text.set_text("\nDecese: {}".format(self.num_deaths))
+        self.recovered_text.set_text("\n\nVindecari: {}".format(self.num_recovered))
 
 
     def gen(self):
@@ -245,7 +245,7 @@ class Virus():
         self.anim = ani.FuncAnimation(
             self.fig,
             self.spread_virus,
-            frames=120,
+            frames=180,
             repeat=True)
 
 

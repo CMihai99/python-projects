@@ -18,9 +18,11 @@ def play_game():
     display_board()
 
     while game_still_going:
-        handle_turn(current_player) # Handle arbitrary player turn
+        # Handle arbitrary player turn
+        handle_turn(current_player)
         check_if_game_over()
-        flip_player() # Flip turn
+        # Flip turn
+        flip_player()
 
     if winner == "X" or winner == "O":
         print(f"{winner} Won!")
@@ -146,13 +148,14 @@ def check_if_tie():
 
     return
 
+# Change turns
 def flip_player():
     global current_player
 
-    if current_player == "X": # Change turns
+    if current_player == "X":
         current_player = "O"
 
-    elif current_player == "O": # Change turns
+    elif current_player == "O":
         current_player = "X"
 
     return

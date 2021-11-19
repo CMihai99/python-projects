@@ -6,7 +6,8 @@ sentence = input("Enter sentence: ")
 def reverse(sentence):
     words = sentence.split(' ')
 
-    reversed_sentence = ' '.join(reversed(words)) # Reverse split string and join using space
+    # Reverse split string and join using space
+    reversed_sentence = ' '.join(reversed(words))
     return reversed_sentence
 
 print(f"Reversed sentence: {reverse(sentence)}")
