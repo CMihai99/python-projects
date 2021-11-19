@@ -60,4 +60,4 @@ if answer.lower().strip() == "no" or "n":
 # Would you like to play? invalid answer
 else:
     time.sleep(0.2)
-    print("Invalid answer. Please try again.")
+    print("Invalid answer, you lost!")
