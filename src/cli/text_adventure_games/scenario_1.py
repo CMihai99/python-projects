@@ -1,17 +1,26 @@
-'''
-Developed by: Calinescu Mihai
-Date: Mar, 2021
+# Developed by: Calinescu Mihai <mihaimihaia431@gmail.com>
+# Date: November 19th, 2021
 
-Github: https://github.com/CMihai99
-'''
+import pyttsx3, PyPDF2
 
+document = open('oop.pdf', 'rb')
+documentReader = PyPDF2.PdfFileReader(document)
+pages = documentReader.numPages
+speaker = pyttsx3.init()
 
-# Import Required Package
+# Read document
+for num in range(0, pages):
+    page = documentReader.getPage(7)
+    text = page.extractText()
+    speaker.say(text)
+    speaker.runAndWait()
+
 import time
 
-answer = input("Would you like to play? (yes/no) ")
+answer = input("Would you like to play? ")
 
-if answer.lower().strip() == "yes":
+# Would you like to play? yes
+if answer.lower().strip() == "yes" or "y":
     time.sleep(0.2)
     answer = input("You reach a crossroad, would you like to go left or right? ").lower().strip()
     # You reach a crossroad, would you like to go left or right? left
@@ -58,6 +67,11 @@ if answer.lower().strip() == "yes":
         print("Invalid choice, you lost!")
 
 # Would you like to play? no
-else:
+if answer.lower().strip() == "no" or "n":
     time.sleep(0.2)
     print("Too bad! You lost!")
+
+# Would you like to play? invalid answer
+else:
+    time.sleep(0.2)
+    print("Invalid answer. Please try again.")
