@@ -1,22 +1,14 @@
-'''
-Developed by: Calinescu Mihai
-Date: 14 Mar, 2021
+# Developed by: Calinescu Mihai <mihaimihaia431@gmail.com>
+# Date: November 19th, 2021
 
-Github: https://github.com/CMihai99
-'''
+import pyttsx3, PyPDF2
 
-
-# Import Required Packages
-import pyttsx3
-import PyPDF2
-
-# Define Document
 document = open('oop.pdf', 'rb')
 documentReader = PyPDF2.PdfFileReader(document)
 pages = documentReader.numPages
 speaker = pyttsx3.init()
 
-# Tell Speaker To Read From Document
+# Read document
 for num in range(0, pages):
     page = documentReader.getPage(7)
     text = page.extractText()
