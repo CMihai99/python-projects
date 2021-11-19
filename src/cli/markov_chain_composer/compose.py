@@ -51,12 +51,6 @@ def compose(g, words, length=50):
 
 def main():
     words = get_words_from_text('texts/hp_sorcerer_stone.txt')
-
-    # for song in os.listdir('songs/{}'.format(artist)):
-        # if song == '.DS_Store':
-        #     continue
-        # words.extend(get_words_from_text('songs/{artist}/{song}'.format(artist=artist, song=song)))
-        
     g = make_graph(words)
     composition = compose(g, words, 100)
     print(' '.join(composition))
