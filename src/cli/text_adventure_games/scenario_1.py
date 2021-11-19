@@ -55,7 +55,7 @@ if answer.lower().strip() == "yes" or "y":
 # Would you like to play? no
 if answer.lower().strip() == "no" or "n":
     time.sleep(0.2)
-    print("Too bad! You lost!")
+    print("Too bad, you lost!")
 
 # Would you like to play? invalid answer
 else:
