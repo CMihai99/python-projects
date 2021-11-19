@@ -29,5 +29,5 @@ weather_info = pd.DataFrame(
 
 print(weather_info)
 
-# Convert To CSV
+# Convert to CSV
 weather_info.to_csv('weather.csv')
